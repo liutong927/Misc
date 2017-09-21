@@ -1,6 +1,10 @@
 git command:
 
+// show latest commit
 git show
+
+// show commit history
+git log
 
 // configure username and email for commit
 git config --global user.email "youremail@gmail.com"
@@ -9,3 +13,8 @@ git config --global user.name "your name"
 // override local repo by force update from server
 git fetch --all
 git reset --hard origin/master
+
+// if fetch all fails, can use stash and pull
+// cache local modification and pull from server
+git stash
+git pull
