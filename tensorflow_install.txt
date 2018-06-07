@@ -1,0 +1,20 @@
+1. install Anaconda
+2. config/install tensorflow in anaconda prompt
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
+conda config --set show_channel_urls yes
+
+conda create -n tensorflow python=3.6
+// now tensorflow environment is established in anaconda navigator
+activate tensorflow
+
+pip install --upgrade --ignore-installed tensorflow
+
+3. verify
+in anaconda prompt, input python,
+import tensorflow, succeed if no error.
+ctrl+Z to quit python env.
+
+4. config tensorflow in pycharm
+File->Settings->Project Interpreter->Add Python Interpreter->Virtual Environment->Existing environment
+Add python.exe in tensorflow env (e.g: C:\Users\...\AppData\Local\Continuum\anaconda3\envs\tensorflow\python.exe)
+now import tensorflow can succeed.
